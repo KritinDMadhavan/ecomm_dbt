@@ -20,6 +20,7 @@ dim_customers as (
         customers.gender,
         customers.location,
         fact_products.product_id,
+        fact_products.purchase_id,
         fact_products.product_name,
         fact_products.quantity,
         fact_products.total_price
