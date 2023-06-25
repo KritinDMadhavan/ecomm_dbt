@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: public
+    database: ecommproject
+    schema: public
+    tables:
+      - name: app_usage_data
+      - name: customer_lifetime_value
+      - name: customer_profile
+      - name: customer_segmentation
+      - name: event_data
+      - name: marketing_campaign_data
+      - name: product_data
+      - name: purchase_data
+        loaded_at_field : purchase_timestamp
+        freshness:
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 24, period: hour}
+      - name: recommendation_data
+      - name: website_interaction_data
