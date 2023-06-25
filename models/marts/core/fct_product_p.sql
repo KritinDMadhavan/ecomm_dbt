@@ -17,6 +17,7 @@ stage as (
     select 
         purchases.customer_id,
         purchases.product_id,
+        purchases.purchase_id,
         products.product_name,
         purchases.quantity,
         purchases.quantity * products.price as total_price
