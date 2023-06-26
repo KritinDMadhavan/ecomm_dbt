@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fct_product_p
+    columns:
+      - name: product_id
+        tests:
+          - dbt_utils.at_least_one
+        
