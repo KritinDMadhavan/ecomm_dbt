@@ -8,11 +8,14 @@ sources:
       - name: app_usage_data
       - name: customer_lifetime_value
       - name: customer_profile
+        description: This data table contains the details of the customer using the platform, such has their name, location etc..
       - name: customer_segmentation
       - name: event_data
       - name: marketing_campaign_data
       - name: product_data
+        description: This data table contains the details of the products sold by the company.
       - name: purchase_data
+        description: This data table contains the the purchase details of the customers.
         loaded_at_field : purchase_timestamp
         freshness:
           warn_after: {count: 12, period: hour}
